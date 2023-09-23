@@ -1,12 +1,16 @@
 ﻿@model StudentInfoModel[]
 <style>
+
+
+
 .student-table {
-    width: 100%
+    
+    width: 100%;
 }
 .student-table th {
 border: 1px solid #9c9c9c;
 padding: 8px 12px;
-background: #ffd7d7;
+background: rgb(169, 224, 176);
 }
 .student-table td {
 padding: 4px 8px;
@@ -16,12 +20,13 @@ border: 1px solid #d6d6d6;
 
 <h1>Sample Student Information</h1>
 
-<table border="1" class="student-table">
+<table class="student-table">
     <thead>
         <tr>
             <th>Name</th>
             <th>Student ID</th>
             <th>Age</th>
+            <th>Address</th>
         </tr>
     </thead>
     <tbody>
@@ -31,6 +36,7 @@ border: 1px solid #d6d6d6;
                 <td>@student.Name</td>
                 <td>@student.StudentId</td>
                 <td>@student.StudentAge</td>
+                <td>@student.Address</td>
             </tr>
         }
     </tbody>
